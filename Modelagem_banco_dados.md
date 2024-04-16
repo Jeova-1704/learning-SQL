@@ -37,15 +37,48 @@ A modelagem de banco de dados é uma arte que se aprende com a prática, e as Fo
     como descrito acima, eles são campos de famílias diferentes, logo tem que ficar em tabelas distintas, e não na mesma tabela. Isso se torna um erro de modelagem no nosso banco de dados 
     
 
+- Exemplo:
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
+![alt text](image-3.png)
+
+
 1. Toda tabela precisa de ao menos uma coluna de identificado único, conhecido como ID ou primary key, que nunca se repita.
     1. `chave natural` pertence ao registro e vc não consegue remover, como ex: CPF
     2. `chave artificial` é a que você cria, que é a coluna do ID;
-2. 
+
 
 > "Chave estrangeira é a chave primária de uma tabela que é utilizada em outra tabela para fazer referência aos registros relacionados entre as duas tabelas, estabelecendo uma conexão entre elas.”
 > 
 
+### Cardinalidade e Obrigatoriedade 
+(0, n)
+(0, 1)
+(1, n)
+(1, 1)
+| Obrigatoriedade | Cardinalidade |
+| --- | --- |
+| ( 0 | n ) |
+| ( 0 | 1 ) |
+| ( 1 | n ) |
+| ( 1 | 1 ) |
+
+
+onde é 0 na obrigatoriedade é porque não é obrigatorio, já quando colocamos 1, é porque é obrigado.
+Já a cardinalidade diz se vai ser um ou mais de um campo, define o maximo de elementos relacionados.
+
+
 ### Relacionamentos entre entidades com chave estrangeiras
 
 - Em relacionamentos 1x1 a chave estrangeira fica na tabela mais fraca
-- Em relacionamentos 1xn a cardinalidade ficará sempre na cardinalidade N
+- Em relacionamentos 1xn a chave estrangeira ficará sempre na cardinalidade N
+
+
+
+### 2. Segunda forma normal:
+![alt text](image-6.png)
+
+### 2. Terceira forma normal:
+![alt text](image-7.png)
+o campo total não depende de niguem e isso pode dificultar e deixar o nosso banco lento, fora que ele pode ser encontrado por outras duas colunas, assim não sendo nescessaria a utilização dele no nosso banco.
