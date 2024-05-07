@@ -44,3 +44,20 @@ INSERT INTO TELEFONE VALUES (NULL, 'CEL', '768494030', 3);
 INSERT INTO TELEFONE VALUES (NULL, 'CEL', '981144243', 2);
 INSERT INTO TELEFONE VALUES (NULL, 'COM', '981425676', 4);
 INSERT INTO TELEFONE VALUES (NULL, 'CEL', '542565262', 4);
+
+
++------------+--------+------------+------------+
+| IDTELEFONE | TIPO   | NUMERO     | ID_CLIENTE |
++------------+--------+------------+------------+
+|          1 | CEL    | 981142054  |          5 |
+|          2 | RES    | 981415443  |          5 |
+|          3 | COM    | 431541545  |          1 |
+|          4 | CEL    | 764365366  |          1 |
+|          5 | RES    | 091090908  |          1 |
+|          6 | CEL    | 5623523I5  |          3 |
+|          7 | CEL    | 768494030  |          3 |
+|          8 | CEL    | 981144243  |          2 |
+|          9 | COM    | 981425676  |          4 |
+|         10 | CEL    | 542565262  |          4 |
++------------+--------+------------+------------+
+
